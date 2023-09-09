@@ -24,3 +24,6 @@ En .gitignore agregamos este archivo :
     - .env
 
 En el archivo .env agregamos las variables de entorno para la conexion a la base de datos
+
+
+PAAS -> Platform as a Service
