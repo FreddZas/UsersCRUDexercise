@@ -16,11 +16,11 @@ const User = db.define("users", {
         type :DataTypes.STRING(30) ,
         allowNull: false,
     },
-    // email varchar(50) [nnot null, unique]
+    // email varchar(50) [not null, unique]
     email: {
         type: DataTypes.STRING(50),
         allowNull: false,
-        unique: true
+        unique: true,
     },
     password: {
         type: DataTypes.STRING,

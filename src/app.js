@@ -1,6 +1,7 @@
 import express from "express";
 import db from "./utils/database.js"
 import User from "./models/users.model.js"
+import "dotenv/config"
 
 User;
 
