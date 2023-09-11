@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors"
 import db from "./utils/database.js"
 import User from "./models/users.model.js"
 import "dotenv/config"
@@ -24,6 +25,7 @@ const app = express();
 
 // Es importante utilizar el express.json para (middleware)
 app.use(express.json());
+app.use(cors());
 
 // Healthy check
 app.get("/", (req, res) => {

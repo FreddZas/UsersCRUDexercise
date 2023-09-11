@@ -8,7 +8,9 @@ const db = new Sequelize({
     port: process.env.DB_PORT,
     password: process.env.DB_PASSWORD,
     dialect: "postgres",
-    dialectOptions: {ssl: {required: true, rejectUnauthorized: false}},
+    // La siguiente ruta nos permite trabajar en SSL
+    // Si deseamos desplegar nuestra ruta en VISUAL STUDIO CODE, TENEMOS QUE COMENTARLA:
+    //dialectOptions: {ssl: {required: true, rejectUnauthorized: false}},
 });
 
 export default db;
